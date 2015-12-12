@@ -53,15 +53,28 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="jueyingxx">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="import UIKit
+class Person: NSObject {    // 存储属性，开辟空间，保存数据    // OC中，alloc分配空间， init进行初始化    // swift中，要求必须给非Optional的属性赋初始值    var name: String    var age: Int
+// 构造函数，没有func
+// override重写父类
+// 集成自父类">
+<meta property="og:type" content="article">
+<meta property="og:title" content="swift中的构造函数">
+<meta property="og:url" content="http://yoursite.com/2015/12/12/swift中的构造函数/index.html">
 <meta property="og:site_name" content="jueyingxx">
-<meta property="og:description">
+<meta property="og:description" content="import UIKit
+class Person: NSObject {    // 存储属性，开辟空间，保存数据    // OC中，alloc分配空间， init进行初始化    // swift中，要求必须给非Optional的属性赋初始值    var name: String    var age: Int
+// 构造函数，没有func
+// override重写父类
+// 集成自父类">
+<meta property="og:updated_time" content="2015-12-12T14:13:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jueyingxx">
-<meta name="twitter:description">
+<meta name="twitter:title" content="swift中的构造函数">
+<meta name="twitter:description" content="import UIKit
+class Person: NSObject {    // 存储属性，开辟空间，保存数据    // OC中，alloc分配空间， init进行初始化    // swift中，要求必须给非Optional的属性赋初始值    var name: String    var age: Int
+// 构造函数，没有func
+// override重写父类
+// 集成自父类">
 
 
 
@@ -73,7 +86,7 @@
   };
 </script>
 
-  <title> jueyingxx </title>
+  <title> swift中的构造函数 | jueyingxx </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -94,9 +107,7 @@
 
 
 
-  <div class="container one-column 
-   page-home 
-">
+  <div class="container one-column page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -193,15 +204,9 @@
       <div class="main-inner">
         <div id="content" class="content">
           
-  <section id="posts" class="posts-expand">
 
+  <div id="posts" class="posts-expand">
     
-
-    
-    
-
-    
-      
 
   
   
@@ -221,10 +226,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2015/12/12/swift中的构造函数/" itemprop="url">
-                  swift中的构造函数
-                </a>
+                swift中的构造函数
               
             
           </h1>
@@ -264,19 +266,26 @@
       
 
       
-        
-          <span itemprop="articleBody">
-            
-            import UIKit
-class Person: NSObject {    // 存储属性，开辟空间，保存数据    // OC中，alloc分配空间， init进行初始化    // swift中，要求必须给非Optional的属性赋初始值    var name: String    va
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/12/swift中的构造函数/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
+        <span itemprop="articleBody"><p>import UIKit</p>
+<p>class Person: NSObject {<br>    // 存储属性，开辟空间，保存数据<br>    // OC中，alloc分配空间， init进行初始化<br>    // swift中，要求必须给非Optional的属性赋初始值<br>    var name: String<br>    var age: Int</p>
+<pre><code><span class="comment">// 构造函数，没有func</span>
+<span class="comment">// override重写父类</span>
+<span class="comment">// 集成自父类NSObjec，默认提供init()函数</span>
+<span class="keyword">override</span> <span class="keyword">init</span>() {
+    name = <span class="string">"jueying"</span>
+    age = <span class="number">18</span>
+}
+
+<span class="comment">// 重载函数，没有返回值，可以增加参数</span>
+<span class="comment">// 外部调用，传入参数进行初始化</span>
+<span class="comment">// 如果自己创建构造函数，但是没有重写init(), 系统会取消init()函数</span>
+<span class="comment">// 外部调用没有办法直接用Person()创建对象</span>
+<span class="keyword">init</span>(name: <span class="type">String</span>, age: <span class="type">Int</span>) {
+    <span class="keyword">self</span>.name = name
+    <span class="keyword">self</span>.age = age
+}
+</code></pre><p>}</p>
+</span>
       
     </div>
 
@@ -284,209 +293,32 @@ class Person: NSObject {    // 存储属性，开辟空间，保存数据    // 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2015/11/27/hexo3-0以上部署到github，需要注意的问题/" rel="next" title="hexo 3.0版本部署到github上，需要注意的问题">
+                <i class="fa fa-chevron-left"></i> hexo 3.0版本部署到github上，需要注意的问题
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2015/11/27/hexo3-0以上部署到github，需要注意的问题/" itemprop="url">
-                  hexo 3.0版本部署到github上，需要注意的问题
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-11-27T10:00:00+08:00" content="2015-11-27">
-              2015-11-27
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/11/27/hexo3-0以上部署到github，需要注意的问题/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/27/hexo3-0以上部署到github，需要注意的问题/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
       
 
       
-        
-          <span itemprop="articleBody">
-            
-            1、hexo 配置如下
-2、配置完hexo _config.yml文件，执行hexo deploy命令，出现错误
-hexo deployERROR Deployer not found: git
-
-3、解决办法：
-1、执行命令 sudo npm install hexo-deployer-git –
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/27/hexo3-0以上部署到github，需要注意的问题/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/11/26/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-11-26T21:02:03+08:00" content="2015-11-26">
-              2015-11-26
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/11/26/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/26/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/26/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
+    <div class="post-spread">
       
     </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-
-  </section>
-
-  
+  </div>
 
 
         </div>
@@ -495,6 +327,14 @@ hexo deployERROR Deployer not found: git
 
 
         
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2015/12/12/swift中的构造函数/"
+           data-title="swift中的构造函数" data-url="http://yoursite.com/2015/12/12/swift中的构造函数/">
+      </div>
+    
+  </div>
+
 
       </div>
 
@@ -515,8 +355,17 @@ hexo deployERROR Deployer not found: git
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" src="http://tp2.sinaimg.cn/1776372941/180/1283589496/1" alt="jueyingxx" itemprop="image"/>
           <p class="site-author-name" itemprop="name">jueyingxx</p>
@@ -579,6 +428,23 @@ hexo deployERROR Deployer not found: git
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
       
 
     </div>
@@ -666,6 +532,167 @@ hexo deployERROR Deployer not found: git
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
 
   <script type="text/javascript" src="/js/bootstrap.js"></script>
 
