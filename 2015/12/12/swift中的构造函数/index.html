@@ -53,28 +53,16 @@
 
 
 
-<meta name="description" content="`import UIKit
-class Person: NSObject {    // 存储属性，开辟空间，保存数据    // OC中，alloc分配空间， init进行初始化    // swift中，要求必须给非Optional的属性赋初始值    var name: String    var age: Int
-// 构造函数，没有func
-// override重写父类
-// 集成自父">
+<meta name="description" content="1234567891011121314151617181920212223242526import UIKitclass Person: NSObject &amp;#123;    // 存储属性，开辟空间，保存数据    // OC中，alloc分配空间， init进行初始化    // swift中，要求必须给非Optional的属性赋初始值    var name: String    var a">
 <meta property="og:type" content="article">
 <meta property="og:title" content="swift中的构造函数">
 <meta property="og:url" content="http://yoursite.com/2015/12/12/swift中的构造函数/index.html">
 <meta property="og:site_name" content="jueyingxx">
-<meta property="og:description" content="`import UIKit
-class Person: NSObject {    // 存储属性，开辟空间，保存数据    // OC中，alloc分配空间， init进行初始化    // swift中，要求必须给非Optional的属性赋初始值    var name: String    var age: Int
-// 构造函数，没有func
-// override重写父类
-// 集成自父">
-<meta property="og:updated_time" content="2015-12-12T14:26:52.000Z">
+<meta property="og:description" content="1234567891011121314151617181920212223242526import UIKitclass Person: NSObject &amp;#123;    // 存储属性，开辟空间，保存数据    // OC中，alloc分配空间， init进行初始化    // swift中，要求必须给非Optional的属性赋初始值    var name: String    var a">
+<meta property="og:updated_time" content="2015-12-12T14:28:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="swift中的构造函数">
-<meta name="twitter:description" content="`import UIKit
-class Person: NSObject {    // 存储属性，开辟空间，保存数据    // OC中，alloc分配空间， init进行初始化    // swift中，要求必须给非Optional的属性赋初始值    var name: String    var age: Int
-// 构造函数，没有func
-// override重写父类
-// 集成自父">
+<meta name="twitter:description" content="1234567891011121314151617181920212223242526import UIKitclass Person: NSObject &amp;#123;    // 存储属性，开辟空间，保存数据    // OC中，alloc分配空间， init进行初始化    // swift中，要求必须给非Optional的属性赋初始值    var name: String    var a">
 
 
 
@@ -266,25 +254,7 @@ class Person: NSObject {    // 存储属性，开辟空间，保存数据    // 
       
 
       
-        <span itemprop="articleBody"><p>`<br>import UIKit</p>
-<p>class Person: NSObject {<br>    // 存储属性，开辟空间，保存数据<br>    // OC中，alloc分配空间， init进行初始化<br>    // swift中，要求必须给非Optional的属性赋初始值<br>    var name: String<br>    var age: Int</p>
-<pre><code><span class="comment">// 构造函数，没有func</span>
-<span class="comment">// override重写父类</span>
-<span class="comment">// 集成自父类NSObjec，默认提供init()函数</span>
-<span class="keyword">override</span> <span class="keyword">init</span>() {
-    name = <span class="string">"jueying"</span>
-    age = <span class="number">18</span>
-}
-
-<span class="comment">// 重载函数，没有返回值，可以增加参数</span>
-<span class="comment">// 外部调用，传入参数进行初始化</span>
-<span class="comment">// 如果自己创建构造函数，但是没有重写init(), 系统会取消init()函数</span>
-<span class="comment">// 外部调用没有办法直接用Person()创建对象</span>
-<span class="keyword">init</span>(name: <span class="type">String</span>, age: <span class="type">Int</span>) {
-    <span class="keyword">self</span>.name = name
-    <span class="keyword">self</span>.age = age
-}
-</code></pre><p>}<br>`</p>
+        <span itemprop="articleBody"><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>: <span class="typename">NSObject &#123;</span></span></span><br><span class="line">    <span class="comment">// 存储属性，开辟空间，保存数据</span></span><br><span class="line">    <span class="comment">// OC中，alloc分配空间， init进行初始化</span></span><br><span class="line">    <span class="comment">// swift中，要求必须给非Optional的属性赋初始值</span></span><br><span class="line">    <span class="variable"><span class="keyword">var</span> name</span>: String</span><br><span class="line">    <span class="variable"><span class="keyword">var</span> age</span>: <span class="typename">Int</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 构造函数，没有func</span></span><br><span class="line">    <span class="comment">// override重写父类</span></span><br><span class="line">    <span class="comment">// 集成自父类NSObjec，默认提供init()函数</span></span><br><span class="line">    <span class="keyword">override</span> init() &#123;</span><br><span class="line">        name = <span class="string">"jueying"</span></span><br><span class="line">        age = <span class="number">18</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 重载函数，没有返回值，可以增加参数</span></span><br><span class="line">    <span class="comment">// 外部调用，传入参数进行初始化</span></span><br><span class="line">    <span class="comment">// 如果自己创建构造函数，但是没有重写init(), 系统会取消init()函数</span></span><br><span class="line">    <span class="comment">// 外部调用没有办法直接用Person()创建对象</span></span><br><span class="line">    init(name: String, age: <span class="typename">Int</span>) &#123;</span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </span>
       
     </div>
