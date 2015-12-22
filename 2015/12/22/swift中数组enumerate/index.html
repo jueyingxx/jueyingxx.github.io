@@ -53,22 +53,25 @@
 
 
 
-<meta name="description" content="title: enumerate——swiftdate: 2015-12-22 12:00
-1、OC写法
- @brief OC中的enumerateObjectsUsingBlock Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block">
+<meta name="description" content="1、OC写法
+ @brief OC中的enumerateObjectsUsingBlock Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block 也意味着可以方便地在不同的类之间传递和复用这些代码。
+
+12345678910- (void">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jueyingxx">
+<meta property="og:title" content="enumerate——swift">
 <meta property="og:url" content="http://yoursite.com/2015/12/22/swift中数组enumerate/index.html">
 <meta property="og:site_name" content="jueyingxx">
-<meta property="og:description" content="title: enumerate——swiftdate: 2015-12-22 12:00
-1、OC写法
- @brief OC中的enumerateObjectsUsingBlock Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block">
-<meta property="og:updated_time" content="2015-12-22T04:06:26.000Z">
+<meta property="og:description" content="1、OC写法
+ @brief OC中的enumerateObjectsUsingBlock Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block 也意味着可以方便地在不同的类之间传递和复用这些代码。
+
+12345678910- (void">
+<meta property="og:updated_time" content="2015-12-22T04:10:11.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jueyingxx">
-<meta name="twitter:description" content="title: enumerate——swiftdate: 2015-12-22 12:00
-1、OC写法
- @brief OC中的enumerateObjectsUsingBlock Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block">
+<meta name="twitter:title" content="enumerate——swift">
+<meta name="twitter:description" content="1、OC写法
+ @brief OC中的enumerateObjectsUsingBlock Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block 也意味着可以方便地在不同的类之间传递和复用这些代码。
+
+12345678910- (void">
 
 
 
@@ -80,7 +83,7 @@
   };
 </script>
 
-  <title>  | jueyingxx </title>
+  <title> enumerate——swift | jueyingxx </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -220,7 +223,7 @@
             
             
               
-                
+                enumerate——swift
               
             
           </h1>
@@ -229,7 +232,7 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-12-22T12:06:26+08:00" content="2015-12-22">
+            <time itemprop="dateCreated" datetime="2015-12-22T12:00:00+08:00" content="2015-12-22">
               2015-12-22
             </time>
           </span>
@@ -260,8 +263,7 @@
       
 
       
-        <span itemprop="articleBody"><p>title: enumerate——swift<br>date: 2015-12-22 12:00</p>
-<h3 id="1、OC写法">1、OC写法</h3><blockquote>
+        <span itemprop="articleBody"><h3 id="1、OC写法">1、OC写法</h3><blockquote>
 <p> @brief OC中的enumerateObjectsUsingBlock<br> Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block 也意味着可以方便地在不同的类之间传递和复用这些代码。</p>
 </blockquote>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)test1 &#123;</span><br><span class="line"><span class="built_in">NSArray</span> *characters = @[<span class="string">@"a"</span>, <span class="string">@"b"</span>, <span class="string">@"c"</span>, <span class="string">@"d"</span>, <span class="string">@"e"</span>];</span><br><span class="line">[characters enumerateObjectsUsingBlock:^(<span class="keyword">id</span>  _Nonnull obj, <span class="built_in">NSUInteger</span> idx, <span class="built_in">BOOL</span> * _Nonnull stop) &#123;</span><br><span class="line"><span class="keyword">if</span> (idx == <span class="number">2</span>) &#123;</span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@"current character is : %@"</span>, obj);</span><br><span class="line">*stop = <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@"other character is : %@"</span>, obj);</span><br><span class="line">&#125;];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -317,7 +319,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2015/12/22/swift中数组enumerate/"
-           data-title="" data-url="http://yoursite.com/2015/12/22/swift中数组enumerate/">
+           data-title="enumerate——swift" data-url="http://yoursite.com/2015/12/22/swift中数组enumerate/">
       </div>
     
   </div>
