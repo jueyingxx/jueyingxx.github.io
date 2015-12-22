@@ -53,25 +53,22 @@
 
 
 
-<meta name="description" content="swift中的懒加载
-OC中的懒加载是用getter来写swift中懒加载有特殊写法懒加载一定能够保证对象被创建，所以可以不用写可选项
-
-1234567891011121314151617/*lazy var dataList: [String]? = &amp;#123;return [&quot;zhangsan&quot;, &quot;lisi&quot;]&amp;#125;()*/lazy var dataList: [String] =">
+<meta name="description" content="title: enumerate——swiftdate: 2015-12-22 12:00
+1、OC写法
+ @brief OC中的enumerateObjectsUsingBlock Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block">
 <meta property="og:type" content="article">
-<meta property="og:title" content="懒加载——swift">
-<meta property="og:url" content="http://yoursite.com/2015/12/13/懒加载——swift/index.html">
+<meta property="og:title" content="jueyingxx">
+<meta property="og:url" content="http://yoursite.com/2015/12/22/swift中数组enumerate/index.html">
 <meta property="og:site_name" content="jueyingxx">
-<meta property="og:description" content="swift中的懒加载
-OC中的懒加载是用getter来写swift中懒加载有特殊写法懒加载一定能够保证对象被创建，所以可以不用写可选项
-
-1234567891011121314151617/*lazy var dataList: [String]? = &amp;#123;return [&quot;zhangsan&quot;, &quot;lisi&quot;]&amp;#125;()*/lazy var dataList: [String] =">
-<meta property="og:updated_time" content="2015-12-13T07:03:43.000Z">
+<meta property="og:description" content="title: enumerate——swiftdate: 2015-12-22 12:00
+1、OC写法
+ @brief OC中的enumerateObjectsUsingBlock Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block">
+<meta property="og:updated_time" content="2015-12-22T04:06:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="懒加载——swift">
-<meta name="twitter:description" content="swift中的懒加载
-OC中的懒加载是用getter来写swift中懒加载有特殊写法懒加载一定能够保证对象被创建，所以可以不用写可选项
-
-1234567891011121314151617/*lazy var dataList: [String]? = &amp;#123;return [&quot;zhangsan&quot;, &quot;lisi&quot;]&amp;#125;()*/lazy var dataList: [String] =">
+<meta name="twitter:title" content="jueyingxx">
+<meta name="twitter:description" content="title: enumerate——swiftdate: 2015-12-22 12:00
+1、OC写法
+ @brief OC中的enumerateObjectsUsingBlock Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block">
 
 
 
@@ -83,7 +80,7 @@ OC中的懒加载是用getter来写swift中懒加载有特殊写法懒加载一�
   };
 </script>
 
-  <title> 懒加载——swift | jueyingxx </title>
+  <title>  | jueyingxx </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -223,7 +220,7 @@ OC中的懒加载是用getter来写swift中懒加载有特殊写法懒加载一�
             
             
               
-                懒加载——swift
+                
               
             
           </h1>
@@ -232,8 +229,8 @@ OC中的懒加载是用getter来写swift中懒加载有特殊写法懒加载一�
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-12-13T15:00:00+08:00" content="2015-12-13">
-              2015-12-13
+            <time itemprop="dateCreated" datetime="2015-12-22T12:06:26+08:00" content="2015-12-22">
+              2015-12-22
             </time>
           </span>
 
@@ -243,8 +240,8 @@ OC中的懒加载是用getter来写swift中懒加载有特殊写法懒加载一�
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/12/13/懒加载——swift/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/13/懒加载——swift/" itemprop="commentsCount"></span>
+                <a href="/2015/12/22/swift中数组enumerate/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/22/swift中数组enumerate/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -263,14 +260,19 @@ OC中的懒加载是用getter来写swift中懒加载有特殊写法懒加载一�
       
 
       
-        <span itemprop="articleBody"><h3 id="swift中的懒加载">swift中的懒加载</h3><blockquote>
-<p>OC中的懒加载是用getter来写<br>swift中懒加载有特殊写法<br>懒加载一定能够保证对象被创建，所以可以不用写可选项</p>
+        <span itemprop="articleBody"><p>title: enumerate——swift<br>date: 2015-12-22 12:00</p>
+<h3 id="1、OC写法">1、OC写法</h3><blockquote>
+<p> @brief OC中的enumerateObjectsUsingBlock<br> Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block 也意味着可以方便地在不同的类之间传递和复用这些代码。</p>
 </blockquote>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span><br><span class="line">lazy var dataList: [String]? = &#123;</span><br><span class="line">return ["zhangsan", "lisi"]</span><br><span class="line">&#125;()</span><br><span class="line">*/</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">lazy</span> <span class="keyword">var</span> dataList: [<span class="type">String</span>] = &#123;</span><br><span class="line"><span class="keyword">return</span> [<span class="string">"zhangsan"</span>, <span class="string">"lisi"</span>]</span><br><span class="line">&#125;()</span><br><span class="line"></span><br><span class="line"><span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</span><br><span class="line"><span class="keyword">super</span>.viewDidLoad()</span><br><span class="line"></span><br><span class="line"><span class="comment">// Do any additional setup after loading the view.</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(dataList)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="swift中的懒加载的本质">swift中的懒加载的本质</h3><blockquote>
-<p>swift中的懒加载其本质是个闭包</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)test1 &#123;</span><br><span class="line"><span class="built_in">NSArray</span> *characters = @[<span class="string">@"a"</span>, <span class="string">@"b"</span>, <span class="string">@"c"</span>, <span class="string">@"d"</span>, <span class="string">@"e"</span>];</span><br><span class="line">[characters enumerateObjectsUsingBlock:^(<span class="keyword">id</span>  _Nonnull obj, <span class="built_in">NSUInteger</span> idx, <span class="built_in">BOOL</span> * _Nonnull stop) &#123;</span><br><span class="line"><span class="keyword">if</span> (idx == <span class="number">2</span>) &#123;</span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@"current character is : %@"</span>, obj);</span><br><span class="line">*stop = <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@"other character is : %@"</span>, obj);</span><br><span class="line">&#125;];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2、swift写法1，必须将数据声明为NSArray（OC类型的数组）">2、swift写法1，必须将数据声明为NSArray（OC类型的数组）</h3><blockquote>
+<p> 数组使用enumerateObjectsUsingBlock<br> Swift 中，这个 API 的 *stop 被转换为了对应的 UnsafeMutablePointer<objcbool>。<br>Unsafe 开头的这些指针类型， ObjCBool的指针指向的内存的内容(memory)设置为true即可</objcbool></p>
 </blockquote>
-<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attribute">lazyFunc</span>: <span class="function"><span class="params">()</span>-&gt;</span>[String] = &#123; <span class="function"><span class="params">()</span>-&gt;</span>[String] <span class="keyword">in</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">"我是懒加载"</span>)</span><br><span class="line"><span class="keyword">return</span> [<span class="string">"zhangsan"</span>, <span class="string">"lisi"</span>]</span><br><span class="line">&#125;</span><br><span class="line">lazy <span class="keyword">var</span> <span class="attribute">demoList</span>: [String] = self.lazyFunc()</span><br></pre></td></tr></table></figure></span>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="func"><span class="keyword">func</span> <span class="title">test2</span><span class="params">()</span></span> &#123;</span><br><span class="line"><span class="keyword">let</span> characters: <span class="type">NSArray</span> = [<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>, <span class="string">"d"</span>, <span class="string">"e"</span>]</span><br><span class="line">characters.enumerateObjectsUsingBlock &#123; (character, idx, stop) -&gt; <span class="type">Void</span> <span class="keyword">in</span></span><br><span class="line"><span class="keyword">if</span> idx == <span class="number">2</span> &#123;</span><br><span class="line">stop.memory = <span class="literal">true</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">"current character is : <span class="subst">\(character)</span>"</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"other character is : <span class="subst">\(character)</span>"</span>)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3、swift写法2，swift类型的数组（Array）">3、swift写法2，swift类型的数组（Array）</h3><blockquote>
+<p> EnumerateGenerator，只支持iOS9.0以后</p>
+</blockquote>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="func"><span class="keyword">func</span> <span class="title">test1</span><span class="params">()</span></span> &#123;</span><br><span class="line"><span class="keyword">let</span> characters = [<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>, <span class="string">"d"</span>, <span class="string">"e"</span>]</span><br><span class="line"><span class="keyword">for</span> (idx, character) <span class="keyword">in</span> characters.<span class="built_in">enumerate</span>() &#123;</span><br><span class="line"><span class="keyword">if</span> idx == <span class="number">2</span> &#123;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"current character is : <span class="subst">\(character)</span>"</span>)</span><br><span class="line"><span class="keyword">break</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"other character is : <span class="subst">\(character)</span>"</span>)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></span>
       
     </div>
 
@@ -281,17 +283,13 @@ OC中的懒加载是用getter来写swift中懒加载有特殊写法懒加载一�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/12/swift中的构造函数/" rel="next" title="构造函数——swift">
-                <i class="fa fa-chevron-left"></i> 构造函数——swift
+              <a href="/2015/12/15/单例——Swift/" rel="next" title="单例——swift">
+                <i class="fa fa-chevron-left"></i> 单例——swift
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/15/单例——Swift/" rel="prev" title="单例——swift">
-                单例——swift <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -318,8 +316,8 @@ OC中的懒加载是用getter来写swift中懒加载有特殊写法懒加载一�
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/12/13/懒加载——swift/"
-           data-title="懒加载——swift" data-url="http://yoursite.com/2015/12/13/懒加载——swift/">
+      <div class="ds-thread" data-thread-key="2015/12/22/swift中数组enumerate/"
+           data-title="" data-url="http://yoursite.com/2015/12/22/swift中数组enumerate/">
       </div>
     
   </div>
@@ -427,7 +425,7 @@ OC中的懒加载是用getter来写swift中懒加载有特殊写法懒加载一�
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#swift中的懒加载"><span class="nav-number">1.</span> <span class="nav-text">swift中的懒加载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#swift中的懒加载的本质"><span class="nav-number">2.</span> <span class="nav-text">swift中的懒加载的本质</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、OC写法"><span class="nav-number">1.</span> <span class="nav-text">1、OC写法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、swift写法1，必须将数据声明为NSArray（OC类型的数组）"><span class="nav-number">2.</span> <span class="nav-text">2、swift写法1，必须将数据声明为NSArray（OC类型的数组）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、swift写法2，swift类型的数组（Array）"><span class="nav-number">3.</span> <span class="nav-text">3、swift写法2，swift类型的数组（Array）</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
