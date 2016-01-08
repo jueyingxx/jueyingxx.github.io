@@ -56,7 +56,7 @@
 <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="jueyingxx">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2016/01/index.html">
 <meta property="og:site_name" content="jueyingxx">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -73,7 +73,7 @@
   };
 </script>
 
-  <title> jueyingxx </title>
+  <title> 归档 | jueyingxx </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -94,9 +94,7 @@
 
 
 
-  <div class="container one-column 
-   page-home 
-">
+  <div class="container one-column  page-archive ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -193,113 +191,59 @@
       <div class="main-inner">
         <div id="content" class="content">
           
-  <section id="posts" class="posts-expand">
 
-    
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
 
-    
-    
+    <span class="archive-page-counter">
       
       
+      
         
-        
-        
+      
+      嗯..! 目前共计 7 篇日志。 继续努力。
+    </span>
+
+    
+
+      
+      
       
 
       
-    
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/01/08/OC中的category/" itemprop="url">
-                  OC中的Category
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2016-01-08T14:00:00+08:00" content="2016-01-08">
-              2016-01-08
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/01/08/OC中的category/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/08/OC中的category/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
         </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
       
       
 
       
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
         
-          <span itemprop="articleBody">
-            
-            1、category简介
-category是Objective-C 2.0之后添加的语言特性。它的主要作用就是为已有的某个类添加方法。还有两个apple推荐使用场景。1、可以把类的实现分散在几个文件中，好处，1).可以按功能分散到不同的category中。2).减少本类的文件体积，代码量。2、声明私
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/08/OC中的category/#more" rel="contents">
-              阅读全文 &raquo;
+            <a class="post-title-link" href="/2016/01/08/OC中的category/" itemprop="url">
+              
+                <span itemprop="name">OC中的Category</span>
+              
             </a>
-          </div>
         
-      
-    </div>
+      </h1>
 
-    <footer class="post-footer">
-      
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-01-08T14:00:00+08:00"
+              content="2016-01-08" >
+          01-08
+        </time>
+      </div>
 
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+    </header>
   </article>
+
 
 
     
@@ -307,6 +251,7 @@ category是Objective-C 2.0之后添加的语言特性。它的主要作用就是
   </section>
 
   
+
 
 
         </div>
@@ -443,6 +388,12 @@ category是Objective-C 2.0之后添加的语言特性。它的主要作用就是
 
   
   
+  
+    <script type="text/javascript">
+      postMotionOptions = {stagger: 100, drag: true};
+    </script>
+  
+
 
   
     
@@ -486,6 +437,12 @@ category是Objective-C 2.0之后添加的语言特性。它的主要作用就是
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
+  
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
+
 
   <script type="text/javascript" src="/js/bootstrap.js"></script>
 

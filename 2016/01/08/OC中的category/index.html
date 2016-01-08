@@ -53,25 +53,19 @@
 
 
 
-<meta name="description" content="1、OC写法
- @brief OC中的enumerateObjectsUsingBlock Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block 也意味着可以方便地在不同的类之间传递和复用这些代码。
-
-12345678910- (void">
+<meta name="description" content="1、category简介
+category是Objective-C 2.0之后添加的语言特性。它的主要作用就是为已有的某个类添加方法。还有两个apple推荐使用场景。1、可以把类的实现分散在几个文件中，好处，1).可以按功能分散到不同的category中。2).减少本类的文件体积，代码量。2、声明私有方法。还有两个category的使用场景:1、模拟多继承2、把framework的私有方法公开">
 <meta property="og:type" content="article">
-<meta property="og:title" content="enumerate——swift">
-<meta property="og:url" content="http://yoursite.com/2015/12/22/swift中数组enumerate/index.html">
+<meta property="og:title" content="OC中的Category">
+<meta property="og:url" content="http://yoursite.com/2016/01/08/OC中的category/index.html">
 <meta property="og:site_name" content="jueyingxx">
-<meta property="og:description" content="1、OC写法
- @brief OC中的enumerateObjectsUsingBlock Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block 也意味着可以方便地在不同的类之间传递和复用这些代码。
-
-12345678910- (void">
-<meta property="og:updated_time" content="2015-12-22T04:10:11.000Z">
+<meta property="og:description" content="1、category简介
+category是Objective-C 2.0之后添加的语言特性。它的主要作用就是为已有的某个类添加方法。还有两个apple推荐使用场景。1、可以把类的实现分散在几个文件中，好处，1).可以按功能分散到不同的category中。2).减少本类的文件体积，代码量。2、声明私有方法。还有两个category的使用场景:1、模拟多继承2、把framework的私有方法公开">
+<meta property="og:updated_time" content="2016-01-08T06:00:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="enumerate——swift">
-<meta name="twitter:description" content="1、OC写法
- @brief OC中的enumerateObjectsUsingBlock Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block 也意味着可以方便地在不同的类之间传递和复用这些代码。
-
-12345678910- (void">
+<meta name="twitter:title" content="OC中的Category">
+<meta name="twitter:description" content="1、category简介
+category是Objective-C 2.0之后添加的语言特性。它的主要作用就是为已有的某个类添加方法。还有两个apple推荐使用场景。1、可以把类的实现分散在几个文件中，好处，1).可以按功能分散到不同的category中。2).减少本类的文件体积，代码量。2、声明私有方法。还有两个category的使用场景:1、模拟多继承2、把framework的私有方法公开">
 
 
 
@@ -83,7 +77,7 @@
   };
 </script>
 
-  <title> enumerate——swift | jueyingxx </title>
+  <title> OC中的Category | jueyingxx </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -223,7 +217,7 @@
             
             
               
-                enumerate——swift
+                OC中的Category
               
             
           </h1>
@@ -232,8 +226,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-12-22T12:00:00+08:00" content="2015-12-22">
-              2015-12-22
+            <time itemprop="dateCreated" datetime="2016-01-08T14:00:00+08:00" content="2016-01-08">
+              2016-01-08
             </time>
           </span>
 
@@ -243,8 +237,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/12/22/swift中数组enumerate/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/22/swift中数组enumerate/" itemprop="commentsCount"></span>
+                <a href="/2016/01/08/OC中的category/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/08/OC中的category/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -263,18 +257,10 @@
       
 
       
-        <span itemprop="articleBody"><h3 id="1、OC写法">1、OC写法</h3><blockquote>
-<p> @brief OC中的enumerateObjectsUsingBlock<br> Objective-C 中最方便的方式是使用 NSArray 的 enumerateObjectsUsingBlock: 方法。因为通过这个方法可以显式地同时得到元素和下标索引，这会有最好的可读性，并且 block 也意味着可以方便地在不同的类之间传递和复用这些代码。</p>
+        <span itemprop="articleBody"><h3 id="1、category简介">1、category简介</h3><blockquote>
+<p>category是Objective-C 2.0之后添加的语言特性。它的主要作用就是为已有的某个类添加方法。还有两个apple推荐使用场景。<br>1、可以把类的实现分散在几个文件中，好处，1).可以按功能分散到不同的category中。2).减少本类的文件体积，代码量。<br>2、声明私有方法。<br>还有两个category的使用场景:<br>1、模拟多继承<br>2、把framework的私有方法公开</p>
 </blockquote>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)test1 &#123;</span><br><span class="line"><span class="built_in">NSArray</span> *characters = @[<span class="string">@"a"</span>, <span class="string">@"b"</span>, <span class="string">@"c"</span>, <span class="string">@"d"</span>, <span class="string">@"e"</span>];</span><br><span class="line">[characters enumerateObjectsUsingBlock:^(<span class="keyword">id</span>  _Nonnull obj, <span class="built_in">NSUInteger</span> idx, <span class="built_in">BOOL</span> * _Nonnull stop) &#123;</span><br><span class="line"><span class="keyword">if</span> (idx == <span class="number">2</span>) &#123;</span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@"current character is : %@"</span>, obj);</span><br><span class="line">*stop = <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@"other character is : %@"</span>, obj);</span><br><span class="line">&#125;];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="2、swift写法1，必须将数据声明为NSArray（OC类型的数组）">2、swift写法1，必须将数据声明为NSArray（OC类型的数组）</h3><blockquote>
-<p> 数组使用enumerateObjectsUsingBlock<br> Swift 中，这个 API 的 *stop 被转换为了对应的 UnsafeMutablePointer<objcbool>。<br>Unsafe 开头的这些指针类型， ObjCBool的指针指向的内存的内容(memory)设置为true即可</objcbool></p>
-</blockquote>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="func"><span class="keyword">func</span> <span class="title">test2</span><span class="params">()</span></span> &#123;</span><br><span class="line"><span class="keyword">let</span> characters: <span class="type">NSArray</span> = [<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>, <span class="string">"d"</span>, <span class="string">"e"</span>]</span><br><span class="line">characters.enumerateObjectsUsingBlock &#123; (character, idx, stop) -&gt; <span class="type">Void</span> <span class="keyword">in</span></span><br><span class="line"><span class="keyword">if</span> idx == <span class="number">2</span> &#123;</span><br><span class="line">stop.memory = <span class="literal">true</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">"current character is : <span class="subst">\(character)</span>"</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"other character is : <span class="subst">\(character)</span>"</span>)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="3、swift写法2，swift类型的数组（Array）">3、swift写法2，swift类型的数组（Array）</h3><blockquote>
-<p> EnumerateGenerator，只支持iOS9.0以后</p>
-</blockquote>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="func"><span class="keyword">func</span> <span class="title">test1</span><span class="params">()</span></span> &#123;</span><br><span class="line"><span class="keyword">let</span> characters = [<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>, <span class="string">"d"</span>, <span class="string">"e"</span>]</span><br><span class="line"><span class="keyword">for</span> (idx, character) <span class="keyword">in</span> characters.<span class="built_in">enumerate</span>() &#123;</span><br><span class="line"><span class="keyword">if</span> idx == <span class="number">2</span> &#123;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"current character is : <span class="subst">\(character)</span>"</span>)</span><br><span class="line"><span class="keyword">break</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"other character is : <span class="subst">\(character)</span>"</span>)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></span>
+</span>
       
     </div>
 
@@ -285,17 +271,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/15/单例——Swift/" rel="next" title="单例——swift">
-                <i class="fa fa-chevron-left"></i> 单例——swift
+              <a href="/2015/12/22/swift中数组enumerate/" rel="next" title="enumerate——swift">
+                <i class="fa fa-chevron-left"></i> enumerate——swift
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/08/OC中的category/" rel="prev" title="OC中的Category">
-                OC中的Category <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -322,8 +304,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/12/22/swift中数组enumerate/"
-           data-title="enumerate——swift" data-url="http://yoursite.com/2015/12/22/swift中数组enumerate/">
+      <div class="ds-thread" data-thread-key="2016/01/08/OC中的category/"
+           data-title="OC中的Category" data-url="http://yoursite.com/2016/01/08/OC中的category/">
       </div>
     
   </div>
@@ -431,7 +413,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、OC写法"><span class="nav-number">1.</span> <span class="nav-text">1、OC写法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、swift写法1，必须将数据声明为NSArray（OC类型的数组）"><span class="nav-number">2.</span> <span class="nav-text">2、swift写法1，必须将数据声明为NSArray（OC类型的数组）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、swift写法2，swift类型的数组（Array）"><span class="nav-number">3.</span> <span class="nav-text">3、swift写法2，swift类型的数组（Array）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、category简介"><span class="nav-number">1.</span> <span class="nav-text">1、category简介</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
